@@ -9,11 +9,11 @@ import toast from "react-hot-toast";
 
 export default function Home() {
 	const router = useRouter();
-	// useEffect(() => {
-	// 	if (!auth.currentUser) {
-	// 		router.replace("/login");
-	// 	}
-	// }, [router]);
+	useEffect(() => {
+		if (!auth.currentUser) {
+			router.replace("/login");
+		}
+	}, [router]);
 
 	return (
 		<>
