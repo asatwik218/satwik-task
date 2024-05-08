@@ -7,7 +7,7 @@ body{
   padding:0;
   box-sizing: border-box;
   background-color: #071829;
-
+  color: white;
 
 }
 
@@ -53,10 +53,51 @@ body{
   height: 100%;
   align-items: center;
   justify-content: center;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto ;
+  padding: 20px 50px;
+}
+
+
+.main-content{
+  width: 100%;
+  border-top: 2px solid #425568;
+}
+
+.carousel{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.item{
+  margin: 20px 15px;
+  min-width: 180px;
+}
+
+.inner-carousel{
+  display: flex;
+  transition: all 0.3s ease-in 0s;
+}
+img{
+  pointer-events: none;
+}
+input{
+  background-color:#071829;
+  border:2px solid #425568;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 3rem;
+  margin-bottom: 0.75rem ;
+  padding: 0px 10px ;
 
 }
 
-@media (max-width:750px){
+@media (max-width:620px){
   .auth-cta{
     width: 100%;
   }
@@ -72,6 +113,28 @@ body{
     position: relative;
     transform: translate(0,-100px);
   }
+  .auth-main{
+    transform: translate(0,-20px);
+  }
+  nav{
+    padding: 10px 15px;
+  }
+
+  .read-btn{
+    display: none;
+  }
+  .item{
+    min-width: 180px;
+    border-bottom: 6px solid ;
+    /* width: 180 px; */
+  }
+  .card{
+    flex-direction: column;
+  }
+  .carousel-btn{
+    display: none;
+  }
+
  
 }
 

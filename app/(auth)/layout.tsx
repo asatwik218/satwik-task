@@ -5,7 +5,7 @@ const AuthLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<div className='auth-container text-white tracking-wider'>
 			<div className='hero-img'>
-				<img src='hero1.jpg' alt='hero-img' />
+				<img src='/hero1.jpg' alt='hero-img' />
 			</div>
 			<div className='auth-cta  flex flex-col   '>
 				<header className='auth-header'>
